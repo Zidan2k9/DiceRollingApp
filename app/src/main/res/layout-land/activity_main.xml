@@ -11,44 +11,59 @@
 
     <ImageView
         android:id="@+id/image_logo"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
 
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
+
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/image_leftDice"
-        app:layout_constraintEnd_toStartOf="@+id/guidline_RightLOgo"
-        app:layout_constraintStart_toStartOf="@+id/guideline_LeftLogo"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/image_rightDice"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         app:srcCompat="@drawable/dicee_logo"
-        android:contentDescription="TODO" />
+        android:contentDescription="@string/casino_logo" />
 
 
     <ImageView
         android:id="@+id/image_leftDice"
+        android:contentDescription="@string/left_dice_image"
 
         android:layout_width="129dp"
 
         android:layout_height="125dp"
 
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/image_rightDice"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_rightDice"
+        app:layout_constraintTop_toTopOf="@id/image_rightDice"
+
+        app:layout_constraintVertical_bias="0.836"
         app:srcCompat="@drawable/dice2" />
 
     <ImageView
         android:id="@+id/image_rightDice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/right_dice_image"
 
 
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/image_leftDice"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499"
         app:srcCompat="@drawable/dice1" />
 
 
@@ -57,32 +72,17 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
         android:background="@color/colorPrimary"
+
         android:contentDescription="@string/description_button"
         android:text="@string/button_text"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guidline_RightLOgo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.88" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline_LeftLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.1" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

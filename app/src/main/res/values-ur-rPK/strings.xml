@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dicee</string>
+    <string name="description_button">چوہوں کو رول دیتا ہے</string>
+    <string name="left_dice_image">بائیں موتی کی تصویر</string>
+    <string name="casino_logo">کاسینو کی تصویر</string>
+    <string name="right_dice_image">دائیں نقطہ تصویر</string>
+    <string name="button_text">گھومنا</string>
+</resources>

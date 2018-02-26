@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dicee</string>
+    <string name="button_text">" Rollen"</string>
+    <string name="description_button">würfelt</string>
+    <string name="casino_logo">" Logo des Casinos"</string>
+    <string name="left_dice_image">linkes Würfelbild</string>
+    <string name="right_dice_image">rechtes Würfelbild</string>
+</resources>
